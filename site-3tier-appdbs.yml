@@ -5,7 +5,7 @@
 
 - name: setup database tier
   become: yes
-  gather_facts: false
+  gather_facts: true
   hosts: appdbs
   roles:
     - {name: base-config, tags: base-config}
