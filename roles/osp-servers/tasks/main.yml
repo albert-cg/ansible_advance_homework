@@ -31,7 +31,7 @@
     timeout: 180
   register: instancefloatingip
 
-- name: Show "{{ instancedeploy }}" public IP
+- name: Show "{{ instance_name }}" public IP
   debug: var=instancefloatingip.floating_ip.floating_ip_address
 
 - name: Wait for "{{ instance_name }}" to be available
